@@ -1,0 +1,30 @@
+.stage {
+    border-bottom: 3px solid #444;
+    display: flex;
+    height: 330px;
+    width: 100%;
+}
+.bitcoin {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-image: url(bitcoin2.png);
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+}
+.bounce-7 {
+    animation-name: bounce-7;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+@keyframes bounce-7 {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-100px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}

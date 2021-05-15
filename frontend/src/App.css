@@ -1,0 +1,143 @@
+body{
+  color: white;
+}
+
+.main-wrapper{
+  background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+  min-height: 100vh;
+}
+
+.page-title{
+  color: white;
+}
+
+.monitor-time {
+  font-family: monospace;
+  font-size: 1.2em;
+}
+
+
+.monitor-stats-table{
+  color: white;
+  font-size: .8em;
+}
+
+.monitor-timer-button{
+  border: none;
+}
+ 
+.monitor-time{
+  color: black;
+}
+
+.coins-table{
+  color: white;
+  width: 100%;
+  font-size: .7em;
+}
+
+.navbar {
+    box-shadow: 0 30px 15px -10px rgba(0,0,0,.2);
+    background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+}
+
+.tableContainer {
+    height: 730px;
+    width: "100%";
+    background: "#b2bec3";
+}
+.MuiDataGrid-columnsContainer {
+    font-family: OpenSans-Regular;
+  font-size: 1.1em;
+  color: #fff;
+  line-height: 1.2;
+  height: 60px;
+  background: linear-gradient(to right, rgb(75, 121, 161), rgb(40, 62, 81));
+}
+.tableContainer > div > .MuiDataGrid-root {
+    border: 0px;
+    border-spacing: 1px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.monitor-timer-button {
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    margin: 5px;
+    width: 100%;
+    
+}
+
+.form-login {
+    background-color: rgba(0,0,0,0.55);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    color:white;
+    box-shadow:0 1px 0 #383636;
+}
+.form-control{
+    background:transparent!important;
+    color:white!important;
+    font-size: 18px!important;
+}
+h1{
+    color:white!important;
+}
+h4 { 
+ border:0 solid #fff; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+.text-white{
+    color: white!important;
+}
+.wrapper {
+    text-align: center;
+}
+.footer p{
+    font-size: 18px;
+}
+.MuiTypography-h5 {
+    font-family: 'Dancing Script', cursive!important;
+}
+.form-login div {
+    font-family: 'Dancing Script', cursive!important;
+}
+.form-login .MuiButton-root {
+    width: auto;
+    font-family: 'Dancing Script', cursive!important;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff!important;
+    opacity: 1; /* Firefox */
+    font-size:18px!important;
+}
+.MuiButton-root input {
+    background:transparent!important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    color: #666!important;
+        background: transparent!important;
+}

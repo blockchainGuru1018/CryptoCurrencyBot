@@ -1,0 +1,349 @@
+body {
+  background: #F7F7F7;
+  -webkit-perspective: 800px;
+}
+h1{
+  text-align: center;
+}
+.coin {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+.animatedCoin {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+.coin div {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+     -moz-box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+          box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+}
+
+.side-a-back {
+  background-size: contain;
+}
+#etherium .side-a-back {
+  background-image: url(etherium2.png); 
+}
+#bitcoin .side-a-back {
+  background-image: url(bitcoin2.png); 
+}
+#ripple .side-a-back {
+  background-image: url(xrp2.png); 
+}
+
+#tinyBitcoin .side-a-back {
+  background-image: url(bitcoin3.png); 
+}
+
+.coin div {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+}
+.animatedCoin div {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+      width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+     -moz-box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+          box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+}
+.side-a {
+  z-index: 100;
+}
+.side-b {
+  -webkit-transform: rotateY(-180deg);
+
+}
+
+.coin.heads {
+  -webkit-animation: flipHeads 1s ease-out forwards;
+  -moz-animation: flipHeads 1s ease-out forwards;
+    -o-animation: flipHeads 1s ease-out forwards;
+       animation: flipHeads 1s ease-out forwards;
+}
+.coin.tails {
+  -webkit-animation: flipTails 1s ease-out forwards;
+  -moz-animation: flipTails 1s ease-out forwards;
+    -o-animation: flipTails 1s ease-out forwards;
+       animation: flipTails 1s ease-out forwards;
+}
+
+@keyframes flipHeads {
+  from { transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+  to { transform: rotateY(900deg); -moz-transform: rotateY(900deg); transform: rotateY(900deg); }
+}
+@keyframes flipTails {
+  from { transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+  to { transform: rotateY(1080deg); -moz-transform: rotateY(1080deg); transform: rotateY(1080deg); }
+}
+
+.CSS-animation {
+  animation: bounceOutDown 0s infinite;
+}
+.CSS-animation-test {
+  animation: bounceTest 5s infinite;
+}
+.section-container {
+    max-width: 700px;
+    min-height: 250px;
+    overflow: hidden;
+}
+.second-animation {
+  animation-duration: 1s;
+  animation-name: "";
+    animation-iteration-count: 1;
+}
+.third-animation {
+  animation-duration: 1s;
+  animation-name: "";
+    animation-iteration-count: 1;
+}
+.fourth-animation {
+  animation-duration: 1s;
+  animation-name: "";
+    animation-iteration-count: 1;
+}
+@keyframes bounceOutleft {
+  to {
+    opacity: 0;
+    transform: translate3d(-500px, 0, 0);
+  }
+}
+@keyframes bounceTest {
+  to {
+    opacity: 0;
+    transform: translate3d(0, 500px, 0);
+  }
+}
+@keyframes bounceOutRightDown {
+
+  to {
+    opacity: 0;
+    transform: translate3d(200px, 200px, 0);
+  }
+}
+
+@keyframes bounceOutTopRight {
+
+  to {
+    opacity: 0;
+    transform: translate3d(200px, -200px, 0);
+  }
+}
+
+.websites {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.sparklist {
+    display: block;
+  overflow: visible;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+    text-align: justify;
+    display: inline-block;
+  justify-content: space-between;
+}
+
+ul {
+    text-align: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+li {
+    text-align: justify;
+    justify-content: space-between;
+}
+.sparklist li {
+    list-style-type: none;
+    text-align: justify;
+    display: inline;
+  margin-right: 35px;
+}
+.sparklist li:hover .sparkline, .sparklist li:focus .sparkline {
+  -webkit-transform: translate(10px) scale(2);
+          transform: translate(10px) scale(2);
+}
+.sparklist li:hover .index .count, .sparklist li:focus .index .count {
+  background-color: #0074d9;
+}
+
+.sparkline {
+  display: inline-block;
+    
+  height: 1em;
+  margin: 0 0.5em;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.sparkline .index {
+  position: relative;
+  float: left;
+  width: 2px;
+  height: 1em;
+}
+
+.sparkline .index .count {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #AAA;
+  font: 0/0 a;
+  text-shadow: none;
+  color: aqua;
+}
+
+/* LAYOUT STYLES */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "fira-sans-2",sans-serif;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+figcaption {
+  margin-top: 40px;
+}
+
+a {
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #aaa;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+a:hover, a:focus {
+  color: #333;
+}
+
+#biitrex {
+    float: right;
+}
+
+#binance {
+    position: absolute;
+    left: 40%;
+    width: 100%;
+}
+#kucoin {
+    float: left;
+}
+
+.third-animation #bitcoin{
+    position: absolute;
+    top: 150px;
+    left: 60%;
+}
+
+.fourth-animation #ripple{
+    position: absolute;
+    top: 150px;
+    left: 15%;
+}
+
+.second-animation #etherium{
+    position: absolute;
+    top: 50px;
+    left: 40%;
+}
+
+.coin-container {
+    width: 50px;
+}
+#etheriumCoinContainerFix {
+    width: 50px;
+    display: block;
+}
+.coin-container #bitcoinButton {
+    width: 30px;
+    height: 30px;
+}
+
+.coinContainer {
+    margin-left: 10px;
+    width: 50px;
+    display: inline-block;
+}
+
+.coinContainerSpin {
+    width: 30px;
+    height: 30px;
+}
+.miniBitcoin{
+    background-image: url(bitcoin3.png);
+}
+.miniEtherium{
+    background-image: url(etherium3.png);
+}
+.miniRipple{
+    background-image: url(xrp3.png);
+}
+
+#bitcoinCoinContainer .side-a-back {
+    background-image: url(xrp3.png);
+}
+#rippleCoinContainer .side-a-back {
+    background-image: url(etherium3.png);
+}
+#etheriumCoinContainer .side-a-back {
+    background-image: url(bitcoin3.png);
+}
+.coin-container button {
+    background-color: none;
+    border: none;
+}
+
+.coinContainerSpin div {
+    width: 30px;
+    height: 30px;
+}
+
+.coin {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transition: transform 1s ease-in;
+    -webkit-transform-style: preserve-3d;
+}
+.spinMoveCoins {
+    display: flex
+}
+
+#bitcoinButton {
+    background: none;
+}
+
+#etheriumButton {
+    background: none;
+}
+
+#rippleButton {
+    background: none;
+}
